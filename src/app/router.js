@@ -5,11 +5,13 @@ import { NotFound } from 'app/components';
 
 export default function AppRouter () {
   return (
-    <Switch>
-      <Route exact path='/' component={MainContainer} />
-      <Route exact path='/search' component={SearchContainer} />
-      <Route exact path='/404' component={NotFound} />
-      <Redirect to='/404' />
-    </Switch>
+    <div className='app'>
+      <Switch>
+        <Route exact path='/' component={MainContainer} />
+        <Route exact path='/search' component={SearchContainer} />
+        <Route exact path='/404' component={NotFound} />
+        <Redirect to='/404' />
+      </Switch>
+    </div>
   );
 }
