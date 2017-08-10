@@ -17,33 +17,21 @@ export default function Main (props) {
   const showCurrentlyReadingBooks = props.currentlyReadingBooks.map((book, key) => (
     <li key={key}>
       <Book
-        id={book.id}
-        shelf={book.shelf}
-        title={book.title}
-        authors={book.authors}
-        imageUrl={book.imageUrl}
+        book={book}
         onMoveBook={props.onMoveBook} />
     </li>
   ));
   const showWantToReadBooks = props.wantToReadBooks.map((book, key) => (
     <li key={key}>
       <Book
-        id={book.id}
-        shelf={book.shelf}
-        title={book.title}
-        authors={book.authors}
-        imageUrl={book.imageUrl}
+        book={book}
         onMoveBook={props.onMoveBook} />
     </li>
   ))
   const showReadBooks = props.readBooks.map((book, key) => (
     <li key={key}>
       <Book
-        id={book.id}
-        shelf={book.shelf}
-        title={book.title}
-        authors={book.authors}
-        imageUrl={book.imageUrl}
+        book={book}
         onMoveBook={props.onMoveBook} />
     </li>
   ))
