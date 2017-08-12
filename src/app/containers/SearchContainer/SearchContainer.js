@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce'
-import { getAll, search, update } from 'app/services/BooksAPI'
+import { getAll, search, update } from 'app/services/BooksAPI';
 import { Search, Loading } from 'app/components';
 
 const { object } = PropTypes;
@@ -20,7 +20,7 @@ class SearchContainer extends Component {
 
   componentDidMount () {
     getAll()
-      .then(this._setMyBooks)
+      .then(this._setMyBooks);
   }
 
   handleBack = () => {

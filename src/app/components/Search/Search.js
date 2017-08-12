@@ -15,7 +15,7 @@ class Search extends Component {
   componentWillMount () {
     this.setState({
       query: this.props.searchQuery,
-    })
+    });
   }
 
   handleChange = (e) => {

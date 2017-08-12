@@ -22,7 +22,7 @@ export default function Book (props) {
 
   // Set default book props here
   if (! ('shelf' in book)) {
-    book.shelf = 'none'
+    book.shelf = 'none';
   }
   if (! ('authors' in book)) {
     book.authors = [];

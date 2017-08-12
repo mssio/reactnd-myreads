@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getAll, update } from 'app/services/BooksAPI'
+import { getAll, update } from 'app/services/BooksAPI';
 import { Main, Loading } from 'app/components';
 
 const { object } = PropTypes;
@@ -17,7 +17,7 @@ class MainContainer extends Component {
 
   componentDidMount () {
     getAll()
-      .then(this._setBooks)
+      .then(this._setBooks);
   }
 
   handleMoveBook = (book, toShelf) => {
@@ -47,11 +47,11 @@ class MainContainer extends Component {
         book.id,
         book
       ]
-    }))
+    }));
     this.setState({
       isLoading: false,
       books: books
-    })
+    });
   }
 
   render () {

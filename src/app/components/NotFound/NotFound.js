@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles'
+import styles from './styles';
 import image from './image.svg';
 
 export default function NotFound () {

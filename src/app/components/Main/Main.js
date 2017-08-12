@@ -27,14 +27,14 @@ export default function Main (props) {
         book={book}
         onMoveBook={props.onMoveBook} />
     </li>
-  ))
+  ));
   const showReadBooks = props.readBooks.map((book, key) => (
     <li key={key}>
       <Book
         book={book}
         onMoveBook={props.onMoveBook} />
     </li>
-  ))
+  ));
 
   return (
     <div className="list-books">
