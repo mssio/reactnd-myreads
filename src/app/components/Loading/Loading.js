@@ -1,3 +1,5 @@
+// Style copied from codepen by Vasilj Miloevi (https://codepen.io/eboye/pen/gKnLq)
+
 import React from 'react';
 import './style.css';
 

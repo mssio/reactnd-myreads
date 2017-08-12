@@ -1,3 +1,5 @@
+// Style copied from codpen by Jorge Aznar (https://codepen.io/jorgeatgu/pen/zmAnr)
+
 import React from 'react';
 import styles from './styles';
 import image from './image.svg';
