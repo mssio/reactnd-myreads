@@ -5,19 +5,31 @@ const { string, array, shape, func } = PropTypes;
 
 Book.propTypes = {
   book: shape({
-    shelf: string.isRequired,
+    id: string.isRequired,
+    shelf: string,
     title: string.isRequired,
-    authors: array.isRequired,
+    authors: array,
     imageLinks: shape({
       smallThumbnail: string,
       thumbnail: string,
-    }).isRequired,
+    }),
   }).isRequired,
   onMoveBook: func.isRequired,
 };
 
 export default function Book (props) {
   const { book } = props;
+
+  // Set default book props here
+  if (! ('shelf' in book)) {
+    book.shelf = 'none'
+  }
+  if (! ('authors' in book)) {
+    book.authors = [];
+  }
+  if (! ('imageLinks' in book)) {
+    book.imageLinks = {};
+  }
 
   return (
     <div className='book'>
